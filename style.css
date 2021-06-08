@@ -8,3 +8,417 @@ body {
 	padding: 0;
 	background: #ddeeee;
 }
+
+/*Mon Menu de Navigation*/
+.myNav{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 3px solid #6f6f6f;
+	padding-bottom: 0rem;
+	text-align: center;
+	position: sticky;
+	top: 0;
+	background: #bdc3c7;
+}
+.myNav h1{
+	font-family: Playfair Display, sans-serif;
+	font-size: 30px;
+	color: #717171;
+}
+.myNav .menu{
+	margin-top: 5px;
+	margin-left: 300px;
+}
+.myNav .menu a{
+	margin-right: 15px;
+	text-decoration: none;
+	color: #fff;
+	font-family: Merriweather&family=Montserrat, sans-serif;
+	font-size: 20px;
+	border-radius: 10px;
+	border-bottom: 1px solid #fff;
+	padding: 5px 7px;
+}
+.myNav .menu a:hover{
+	background: #ddeeee;
+	color: #FF7B07;
+	/*padding: 5px 5px;*/
+}
+.myNav span a{
+	margin-left: 100px;
+	margin-top: 5px;
+	padding: .5rem 1rem;
+	text-decoration: none;
+	color: #fff;
+	font-family: Merriweather&family=Montserrat, sans-serif;
+	font-size: 15px;
+	float: right;
+	background: #FF7B07;
+	border-radius: 10px;
+}
+.myNav span a #taille{
+	margin-left: .2rem;
+	background: #bdc3c7;
+	border-radius: 50%;
+	padding: .2rem;
+	font-weight: bold;
+}
+.myNav span a:hover{
+	color: #FF7B07;
+	background: #ddeeee;
+}
+
+/*Ma page d'accueil header*/
+.myheader{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: url('images/img23.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: scroll;
+	background-position: center;
+	padding: 40px;
+	text-align: center;
+}
+.myheader{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: url('images/img23.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: scroll;
+	background-position: center;
+	padding: 70px 40px;
+	text-align: center;
+	height: 420px;
+}
+.myheader h1{
+	font-family: Playfair Display, sans-serif;
+	font-size: 50px;
+	color: #fff;
+}
+.myheader h3{
+	font-family: 'Playfair Display', sans-serif;
+	font-size: 25px;
+	color: #fff;
+	margin-top: -10px;
+	border-bottom: 2px solid #717171;
+	padding-bottom: 5px;
+}
+.myheader .btnParcour a{
+	padding: 15px 30px;
+	color: #fff;
+	background: #FF7B07;
+	font-family: Playfair Display, sans-serif;
+	font-size: 25px;
+	outline: none;
+	cursor: pointer;
+	border:none;
+	border-radius: 10px;
+	text-decoration: none;
+}
+.myheader .btnParcour a:hover{
+	color: #FF7B07;
+	background: #ddeeee;
+}
+
+/*Ma section de mes articles*/
+.mySection{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	padding: 50px 30px;	
+}
+.mySection h1{
+	font-family: Playfair Display, sans-serif;
+	font-size: 35px;
+	text-align: center;
+	color: #6f6f6f;
+}
+.mySection .first-content{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	margin-right: 50px;
+	margin-left: 50px;
+}
+.mySection .card{
+	margin-bottom: 20px;
+}
+.mySection .first-content .card .card-top{
+	/*width: 300px;*/
+	margin-right: 15px;
+
+}
+
+.mySection .first-content .card .card-bottom {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	background: #fff;
+	color: #000;
+	margin-right: 15px;
+	margin-top: -25px;
+	padding-left: 10px
+}
+.mySection .first-content .card .card-bottom span h1, p{
+	word-wrap: break-word;
+}
+
+.mySection .first-content .card .card-bottom span a{
+	margin-right: 0px;
+	padding-right: 0px;
+}
+/*last content*/
+.mySection .last-content{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 30px;
+}
+.mySection .last-content .card .card-top{
+	/*width: 300px;*/
+	margin-right: 15px;
+
+}
+.mySection .last-content .card .card-top img,
+.mySection .full-content .card .card-top img,
+.mySection .first-content .card .card-top img{
+	height: 300px;
+	width: 300px;
+	border-radius:10px;	 
+}
+.mySection .last-content .card .card-bottom {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	background: #fff;
+	color: #000;
+	margin-right: 15px;
+	margin-top: -25px;
+	padding-left: 10px
+}
+.mySection .last-content .card .card-bottom span h1,
+.mySection .full-content .card .card-bottom span h1,
+.mySection .first-content .card .card-bottom span h1{
+	font-family: Playfair Display, sans-serif;
+	font-size: 25px;
+	color: #6f6f6f;
+}
+.mySection .last-content .card .card-bottom span p,
+.mySection .first-content .card .card-bottom span p,
+.mySection .full-content .card .card-bottom span p{
+	font-family: Montserrat, sans-serif;
+	font-size: 15px;
+	margin-top: -15px
+
+}
+
+.mySection .last-content .card .card-bottom span a,
+.mySection .full-content .card .card-bottom span a,
+.mySection .first-content .card .card-bottom span a {
+	font-size: 25px;
+	padding: 1rem;
+	margin-right: .4rem;
+	color: #6f6f6f;
+	background: #ddeeee;
+}
+.mySection .first-content .card .card-bottom span a:hover{
+	background: #ffd77d;
+	color: #fff;
+	font-size: 35px;
+}
+
+/*full content*/
+.mySection .full-content{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 30px;
+}
+.mySection .full-content .card .card-top{
+	/*width: 300px;*/
+	margin-right: 15px;
+
+}
+
+.mySection .full-content .card .card-bottom {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	background: #fff;
+	color: #000;
+	margin-right: 15px;
+	margin-top: -25px;
+	padding-left: 10px;
+}
+
+/*La section de mes Services*/
+/*Mes services*/
+.myServices{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 40px 60px;
+	border-top: 3px solid #6f6f6f;border-bottom: 3px solid #6f6f6f;
+	background: #fff;
+	margin: 30px 60px;
+	border-radius: 10px;
+	justify-content: center;
+}
+.myServices .description{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-top: 40px;
+}
+.myServices .description h1{
+	font-family: Playfair Display, sans-serif;
+	font-size: 35px;
+	color: #6f6f6f;
+}
+.myServices .description p{
+	max-width: 60%;
+	margin-top: -15px;
+	font-family: Montserrat, sans-serif;
+	font-size: 17px;
+}
+.myServices .content-service{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-top: 20px;
+}
+.myServices .content-service .propos-me, .livraison{
+	margin-right: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.myServices .content-service .paiement{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.myServices .content-service .propos-me img, .livraison img, .paiement img{
+	width: 180px;
+	height: 180px;
+	align-items: center;
+	border-radius: 100%;
+}
+.myServices .content-service .propos-me h1, .livraison h1, .paiement h1{
+	font-family: Playfair Display, sans-serif;
+	text-align: center;
+}
+.myServices .content-service .livraison p, .paiement p{
+	font-family: Montserrat, sans-serif;
+	font-size: 15px;
+	margin-top: -10px;
+}
+.myServices .content-service .propos-me p{
+	margin-top: -10px;
+}
+.myServices .content-service .propos-me p a{
+	margin-right: 15px;
+	text-decoration: none;
+	color: #000;
+}
+
+/*Mes contacts*/
+.contact{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.contact h1{
+	font-family: Playfair Display, sans-serif;
+	font-size: 35px;
+	text-align: center;
+	color: #6f6f6f;
+}
+.contact .form-contact p input{
+	width: 300px;
+	height: 30px;
+	border:none;
+	font-family: 'Playfair Display', serif;
+	font-size: 17px;
+	outline: none;
+}
+.contact .form-contact p input:hover{
+	background: #ffd77d;
+}
+.contact .form-contact p textarea{
+	width: 300px;
+	height: 100px;
+	font-family: 'Playfair Display', serif;
+	font-size: 17px;
+	border:none;
+	outline: none;
+	color: #717171;
+}
+.contact .form-contact p textarea:hover{
+	background: #ffd77d;
+}
+.contact .form-contact span input{
+	/*width: 100px;
+	height: 60px;*/
+	padding: 15px 30px;
+	color: #fff;
+	background: #FF7B07;
+	font-family: Playfair Display, sans-serif;
+	font-size: 25px;
+	outline: none;
+	cursor: pointer;
+	border:none;
+	border-radius: 10px;
+}
+.contact .form-contact span input:hover{
+	background: #ffd77d;
+}
+
+/*Mon footer*/
+footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 20px;
+	padding: 20px 30px;
+	background: #000;
+	/*position: absolute;	
+	bottom: 0;*/
+}
+footer .email{
+	color: rgb(181, 181, 181);
+	font-family: 'Playfair Display', serif;
+	font-size: 17px;
+	text-align: center;
+}
+footer .icon-social{
+	text-align: center;
+	color: rgb(181, 181, 181);
+}
+footer .icon-social a{
+	padding-right: 20px;
+	color: rgb(181, 181, 181);
+	font-size: 25px;
+}
+footer .number{
+	color: rgb(181, 181, 181);
+	font-family: 'Playfair Display', serif;
+	font-size: 17px;
+	text-align: center;	
+}

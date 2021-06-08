@@ -10,7 +10,7 @@
 </head>
 <body id="acceuil">
 	<nav class="myNav">
-		<h1>MaBoutique</h1>
+		<h1>Sen~Koom</h1>
 		<div class="menu">
 			<a href="#acceuil">Acceuil</a>
 			<a href="#produits">Nos produits</a>

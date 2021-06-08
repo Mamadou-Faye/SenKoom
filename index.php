@@ -8,7 +8,7 @@
 	<div class="first-content">
 		<div class="card">
 			<div class="card-top">
-				<img src="images/<?= $produit->id; ?>.jpg">
+				<img src="images/img12.jpg">
 			</div>
 			<div class="card-bottom">
 				<span>
