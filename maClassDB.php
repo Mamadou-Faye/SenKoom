@@ -1,6 +1,6 @@
 <?php 
 
-public class DB {
+class DB {
 
 	private $username = "root";
 	private $hostname = "127.0.0.1";
@@ -9,14 +9,14 @@ public class DB {
 	private $bdd;
 
 	public function __construct($userName = NULL, $hostName = NULL, $dbName = NULL, $password = NULL) {
-		$this->userName = $username;
-		$this->hostName = $hostname;
-		$this->dbName = $dbname;
+		$this->username = $userName;
+		$this->hostname = $hostName;
+		$this->dbname = $dbName;
 		$this->password = $password;
 
 		try {
-			$this->bdd = new PDO('mysql:host='.$this->hostName .';dbname='.$this->dbName, $this->userName, $this->password, array(
-				PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES UTF8';
+			$this->bdd = new PDO('mysql:host='.$this->hostname .';dbname='.$this->dbname, $this->username, $this->password, array(
+				PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES UTF8',
 				PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING
 			));
 		}catch(PDOExeption $e) {
