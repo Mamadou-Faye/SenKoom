@@ -2,16 +2,16 @@
 
 class DB {
 
-	private $username = "root";
 	private $hostname = "127.0.0.1";
 	private $dbname = "monpoisson";
+	private $username = "root";
 	private $password = "";
 	private $bdd;
 
-	public function __construct($userName = NULL, $hostName = NULL, $dbName = NULL, $password = NULL) {
-		$this->username = $userName;
-		$this->hostname = $hostName;
-		$this->dbname = $dbName;
+	public function __construct($username=NULL, $hostname=NULL, $dbname=NULL, $password=NULL) {
+		$this->hostname = $hostname;
+		$this->dbname = $dbname;
+		$this->username = $username;
 		$this->password = $password;
 
 		try {

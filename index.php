@@ -14,7 +14,7 @@
 			</div>
 			<div class="card-bottom">
 				<span>
-					<h1><?= $produit->name ?></h1>
+					<h1><?= $produit->name; ?></h1>
 					<p>desciption</p>
 				</span>
 				
