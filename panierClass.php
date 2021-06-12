@@ -4,7 +4,7 @@ class panier{
 
 	private $DB;
 
-	public function __construct() {
+	public function __construct($DB) {
 
 		if (!isset($_SESSION)) {
 			session_start();
@@ -14,7 +14,7 @@ class panier{
 			$_SESSION['panier'] = array();
 		}
 
-		this->DB = $DB;
+		$this->DB = $DB;
 
 	}
 
