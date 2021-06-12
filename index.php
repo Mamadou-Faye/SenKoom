@@ -1,13 +1,10 @@
 <?php require "class.php"; ?>
-<!-- Mon header -->
-<?php require "header.php"; ?>
-
-<!-- ma section des articles -->
+<?php require "header.php"; ?>	
 <section class="mySection" id="produits">
 	<h1>Nos Produits</h1>
 	<div class="first-content">
-		<?php $produits = $DB->query('SELECT * FROM produits'); ?>
-		<?php foreach ($produits as $produit): ?>
+	<?php $produits = $DB->query('SELECT * FROM produits'); ?>
+	<?php foreach ($produits as $produit): ?>
 		<div class="card">
 			<div class="card-top">
 				<img src="images/<?= $produit->id; ?>.jpg">
@@ -15,20 +12,20 @@
 			<div class="card-bottom">
 				<span>
 					<h1><?= $produit->name; ?></h1>
-					<p>desciption</p>
+					<p><?= number_format($produit->price,2,',',' '); ?> Fcfa</p>
 				</span>
 				
 				<span>
-					<a class="addPanier" href="#">
+					<a class="addPanier" href="addpanier.php?id=<?= $produit->id; ?>">
 						<!-- <img src="images/panierAchat1.png"> --><i class="fa fa-cart-plus"></i>
 					</a>
 				</span>
 				
 			</div>
 		</div>
-		<?php endforeach; ?>
+	<?php endforeach; ?>
 	</div>
 </section>
 
-<!-- Mon footer -->
+<!-- mon footer -->
 <?php require "footer.php"; ?>

@@ -1,6 +1,6 @@
 <?php
 // require "header.php";
-require "mesClass.php";
+require "class.php";
 $json = array('error' => true);
 if(isset($_GET['id'])){
     $product = $DB->query('SELECT id FROM produits WHERE id = :id', array('id'  => $_GET['id']));

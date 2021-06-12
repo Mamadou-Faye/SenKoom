@@ -423,6 +423,181 @@ footer .number{
 	text-align: center;	
 }
 
+/*resolution maximale de 680px*/
+@media screen and (max-width: 680px){
+	.myNav .menu{
+		margin-left: 0px;
+		margin-bottom: 20px;
+	}
+	.myNav span a{
+		margin-left: 0px;
+		margin-top: -15px;
+		padding:5px 5px;
+	}
+	.myNav {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.myNav .menu a{
+		display: none;
+		border-bottom: none;
+	}	
+	.mySection .first-content .card{
+		margin-bottom: 20px;
+	}
+	.mySection .first-content .card .card-top{
+		margin-right: 0px;
+	}
+	.mySection .first-content .card .card-top img{
+		height: 250px;
+		width: 250px;
+	}
+	.mySection .first-content .card .card-bottom{
+		margin-top: -25px;
+		width: 241px;
+	}
+	.mySection .first-content .card .card-bottom span a img{
+		margin-left: 70px;
+	}
+	.mySection .last-content .card{
+		margin-bottom: 20px;
+	}
+	.mySection .last-content .card .card-top{
+		margin-right: 0px;
+	}
+	.mySection .last-content .card .card-top img{
+		height: 250px;
+		width: 250px;
+	}
+	.mySection .last-content .card .card-bottom{
+		margin-top: -25px;
+		width: 241px;
+	}
+	.mySection .last-content .card .card-bottom span a img{
+		margin-left: 70px;
+	}
+	.mySection .full-content .card{
+		margin-bottom: 20px;
+	}
+	.mySection .full-content .card .card-top{
+		margin-right: 0px;
+	}
+	.mySection .full-content .card .card-top img{
+		height: 250px;
+		width: 250px;
+	}
+	.mySection .full-content .card .card-bottom{
+		margin-top: -25px;
+		width: 241px;
+	}
+	.mySection .full-content .card .card-bottom span a img{
+		margin-left: 70px;
+	}
+	.myServices .content-service .propos-me img, .livraison img, .paiement img{
+		width: 80px;
+		height: 80px;
+	}
+	.myServices .content-service .propos-me, .livraison{
+		margin-right: 0px;
+	}
+	.myServices{
+		padding: 0px;
+		margin: 0px;
+		border: none;
+		border-radius:0px;
+	}
+	.myServices .content-service{
+		justify-content: center;
+	}
+	.myServices .description{
+		justify-content: initial;
+	}
+	.myServices .description p{
+		margin: 0px;
+		padding: 0px;
+		font-size: initial;
+		width: auto;
+		text-align: justify;
+	}
+	.contact .form-contact p input{
+		width: 250px;
+		height: 30px;
+	}
+	.contact .form-contact p textarea{
+		width: 250px;
+	}
+	.contact .form-contact span input{
+		padding: 5px 5px;
+	}
+	footer{
+		padding: 10px;
+		flex-direction: column;
+	}
+	footer .email{
+		margin: 5px;
+		margin-bottom: 15px;
+	}
+	footer .icon-social{
+		margin: 0px;
+		margin-bottom: 15px;
+	}
+}
+
+/*résolution max 1100*/
+@media screen and (max-width: 1200px){
+	.myNav .menu{
+		margin-left: 50px;
+		margin-bottom: 20px;
+	}
+	.myNav span a{
+		margin-left: 20px;
+	}
+	.mySection .first-content .card, .last-content .card, .full-content .card{
+		margin-bottom: 20px;
+	}
+	.myServices .content-service .propos-me, .livraison, .paiement{
+		margin: 20px;
+	}
+	.myServices .content-service .propos-me img, .livraison img, .paiement img{
+		width: 80px;
+		height: 80px;
+	}
+	.myServices .content-service .propos-me h1, .livraison h1, .paiement h1{
+		font-size: 20px;
+	}
+	.myServices .content-service .propos-me, .livraison{
+		margin-right: 0px;
+	}
+	footer {
+		align-items: center;
+		padding: 40px 0px;
+	}
+	footer .email{
+		margin-left: -50px;
+		margin-right: 20px;
+	}
+	footer .icon-social{
+		margin-right: 40px;
+		margin-left: 50px;
+		text-align: center;
+	}
+}
+
+/*resolution max 815*/
+@media screen and (max-width: 815px){
+	.myServices .content-service{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.myServices .content-service .propos-me img, .livraison img, .paiement img{
+		width: 140px;
+		height: 140px;
+	}
+}
+
+
 /*Panier.php*/
 .panier-header{
 	background: #ddeeee;
@@ -550,4 +725,26 @@ footer .number{
 }
 .row-table .col-table .table-panier tr td .action .del img{
 		
+}
+
+/*moyenne resolution for panier*/
+@media screen and (max-width: 680px){
+	.panier-header .row-header .col-header-total{
+		margin-left: 10px;
+		padding: 0px 10px;
+		border: none;
+	}
+	.panier-header .row-header .col-header-taille{
+		margin-left: 30px;
+		padding: 0px 25px;
+		border: none;
+	}
+	.row-table .col-table .table-panier th, td{
+		border: 2px solid #2B3433;
+		padding: 0px 0px;
+	}
+	.panier-header .row-table .col-table .table-panier tr .td-img img{
+		width: 20px;
+		height: 20px;
+	}
 }

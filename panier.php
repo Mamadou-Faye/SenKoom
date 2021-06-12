@@ -1,3 +1,9 @@
+<?php require "class.php"; ?>
+<?php 
+if(isset($_GET['del'])){
+    $panier->del($_GET['del']);
+}
+?>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -29,13 +35,13 @@
 		<div class="col-header-total">
 			<p>
 				<b>Taille</b>
-				<span></span>
+				<span><?= $panier->count(); ?></span>
 			</p>
 		</div>
 		<div class="col-header-taille">
 			<p>
 				<b>Totale</b>
-				<span></span>
+				<span><?= number_format($panier->total(), 2, ',',' '); ?></span>
 			</p>
 		</div>
 	</div>
