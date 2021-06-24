@@ -2,14 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Playfair+Display:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@600&family=Playfair+Display:wght@600&display=swap');
-
-body {
-	margin: 0;
+html{
+	scroll-behavior: smooth;
+}
+body{
+	margin:0;
 	padding: 0;
 	background: #ddeeee;
+	/*position: relative;*/
 }
-
-/*Mon Menu de Navigation*/
 .myNav{
 	display: flex;
 	flex-wrap: wrap;
@@ -70,7 +71,7 @@ body {
 	background: #ddeeee;
 }
 
-/*Ma page d'accueil header*/
+/*mon header*/
 .myheader{
 	display: flex;
 	flex-direction: column;
@@ -127,8 +128,6 @@ body {
 	color: #FF7B07;
 	background: #ddeeee;
 }
-
-/*Ma section de mes articles*/
 .mySection{
 	display: flex;
 	flex-wrap: wrap;
@@ -262,7 +261,6 @@ body {
 	padding-left: 10px;
 }
 
-/*La section de mes Services*/
 /*Mes services*/
 .myServices{
 	display: flex;
@@ -336,7 +334,7 @@ body {
 	color: #000;
 }
 
-/*Mes contacts*/
+/*mes contacts*/
 .contact{
 	display: flex;
 	flex-direction: column;
@@ -597,7 +595,6 @@ footer .number{
 	}
 }
 
-
 /*Panier.php*/
 .panier-header{
 	background: #ddeeee;
@@ -671,7 +668,6 @@ footer .number{
 	text-align: center;
 	color: #fff;
 }
-
 .row-table{
 /*	position: relative;*/
 	display: flex;
@@ -747,4 +743,103 @@ footer .number{
 		width: 20px;
 		height: 20px;
 	}
+}a
+
+/*ma page inscription des clients*/
+.myFormInscript .form-validate{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.myFormInscript .form-validate h1{
+	font-family: Playfair Display, sans-serif;
+	font-size: 30px;
+	color: #6f6f6f;
+}
+.myFormInscript .form-validate p input, p select{
+	font-family: 'Playfair Display', serif;
+	font-size: 20px;
+	width: 300px;
+	padding: 10px 20px;
+	border-radius: 10px;
+	outline: none;
+	border:none;
+}
+.myFormInscript .form-validate p input:hover, p select:hover{
+	background: #ddeeee;
+	color: #FF7B07;
+}
+.myFormInscript .form-validate span input{
+	font-family: 'Playfair Display', serif;
+	font-size: 20px;
+	background: #FF7B07;
+	border-radius: 10px;
+	width: 100px;
+	padding: 10px 20px;
+	outline: none;
+	cursor: pointer;
+	border:none;
+}
+.form-validate span input:hover{
+	background: #ddeeee;
+	color: #FF7B07;
+}
+
+/*ma page de connection des clients*/
+.myform{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 40px 30px;
+}
+.myform h1{
+	font-family: Playfair Display, sans-serif;
+	font-size: 40px;
+	color: #6f6f6f;
+}
+.myform form{
+	padding: 0px 0px;
+	width: 100%;
+}
+.myform form p input{
+	width: 250px;
+	height: 30px;
+	border: 2px solid #fff;
+	border-radius: 10px;
+	outline: none;
+	background: #fff;
+	padding: 0.5em;
+}
+.myform form p input:hover{
+	color: #FF7B07;
+	background: #fff;
+}
+.myform form span input{
+	width: 150px;
+	padding: 15px;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 30px;
+	background: #FF7B07;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	border-radius: 10px;
+}
+.myform form span input:hover{
+	background:#fff;
+	color: #FF7B07;
+}
+.erreur{
+	color: red;
+	font-size: 15px;
+}
+.myform p .link-insc{
+	text-decoration: none;
+	color: #777;
+	font-size: 20px;
+	border-bottom: 1px solid #777;
+	padding-bottom: 5px;
 }
