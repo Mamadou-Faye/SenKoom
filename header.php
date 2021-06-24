@@ -3,10 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>SenKoom</title>
+	<title>SamaJenn</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="css/all.css">
-	<link rel="stylesheet" type="text/css" href="themify-icons/themify-icons.css">	
+	<link rel="stylesheet" href="css/all.css">
 </head>
 <body id="acceuil">
 	<nav class="myNav">
@@ -17,12 +16,7 @@
 			<a href="#services">Services</a>
 			<a href="#contacts">contacts</a>
 		</div>
-		<span>
-			<a href="panier.php">
-				<i class="fa fa-cart-plus"></i>
-				<span id="taille"></span>
-			</a>
-		</span>
+		<span><a href="panier.php"><i class="fa fa-cart-plus"></i><span id="taille"><?= $panier->count(); ?></span></a></span>
 	</nav>
 	<header class="myheader" id="">
 		<h1>Bienvenue Chez Nous</h1>

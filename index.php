@@ -1,4 +1,4 @@
-<?php require "mesClass.php"; ?>
+<?php require "class.php"; ?>
 <?php require "header.php"; ?>	
 <section class="mySection" id="produits">
 	<h1>Nos Produits</h1>

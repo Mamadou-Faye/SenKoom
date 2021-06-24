@@ -1,5 +1,4 @@
 <?php
-// require "header.php";
 require "class.php";
 $json = array('error' => true);
 if(isset($_GET['id'])){
@@ -17,4 +16,3 @@ if(isset($_GET['id'])){
 }
 echo json_encode($json);
 ?>
-<?php //require "footer.php"; ?> 
