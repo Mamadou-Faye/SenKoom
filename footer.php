@@ -71,5 +71,11 @@
 	<script src="jquery/jquery-3.3.1.min.js"></script>
 	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> -->
 	<script type="text/javascript" src="jquery/app.js"></script>
+	<script>
+		window.addEventListener('scroll', function() {
+			const header = document.querySelector('nav');
+			header.classList.toggle('sticky', window.scrollY > 0);
+		})
+	</script>
 </body>
 </html>

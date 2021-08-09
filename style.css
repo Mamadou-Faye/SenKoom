@@ -12,17 +12,29 @@ body{
 	/*position: relative;*/
 }
 .myNav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10000;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	border-bottom: 3px solid #6f6f6f;
-	padding-bottom: 0rem;
+	/* border-bottom: 3px solid #6f6f6f; */
+	/* padding-bottom: 0rem; */
+	padding: 40px 60px;
 	text-align: center;
-	position: sticky;
-	top: 0;
-	background: #bdc3c7;
+	transition: 0.5s;
+	/* background: #bdc3c7; */
 }
+
+.myNav.sticky {
+	background: #fff;
+	padding: 10px 100px;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
 .myNav h1{
 	font-family: Playfair Display, sans-serif;
 	font-size: 30px;
@@ -72,7 +84,7 @@ body{
 }
 
 /*mon header*/
-.myheader{
+/* .myheader{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -84,8 +96,9 @@ body{
 	background-position: center;
 	padding: 40px;
 	text-align: center;
-}
+} */
 .myheader{
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -97,7 +110,7 @@ body{
 	background-position: center;
 	padding: 70px 40px;
 	text-align: center;
-	height: 420px;
+	min-height: 100vh;
 }
 .myheader h1{
 	font-family: Playfair Display, sans-serif;
